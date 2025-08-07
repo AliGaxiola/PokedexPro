@@ -16,6 +16,6 @@ fun PokemonDetailScreen(pokemonName: String) {
             .fillMaxSize()
             .padding(16.dp)
     ) {
-        Text(text = "Detalle de $pokemonName", style = MaterialTheme.typography.titleLarge)
+        Text(text = "$pokemonName Details", style = MaterialTheme.typography.titleLarge)
     }
 }
