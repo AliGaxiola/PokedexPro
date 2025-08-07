@@ -8,6 +8,7 @@ fun PokemonResult.toPokemon(): Pokemon {
         "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/$id.png"
 
     return Pokemon(
+        id = id,
         name = name.replaceFirstChar { it.uppercase() },
         imageUrl = imageUrl
     )

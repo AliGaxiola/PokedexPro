@@ -42,7 +42,7 @@ fun PokemonListScreen(navController: NavController, viewModel: PokemonListViewMo
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .clickable { navController.navigate("pokemon_detail/${pokemon.name}") }
+                    .clickable { navController.navigate("pokemon_detail/${pokemon.id}/${pokemon.name}") }
                     .padding(8.dp),
                 verticalAlignment = Alignment.CenterVertically
             ) {
